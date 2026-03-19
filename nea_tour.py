@@ -60,7 +60,7 @@ if __name__ == '__main__':
     # Number of piecewise constant control segments per solar sailing arc
     N_control = 3
 
-    # How many nodes are retained in each level in beach search
+    # How many nodes are retained in each level in beam search
     beam_width = 3
 
     verbose_optim = False
@@ -108,7 +108,7 @@ if __name__ == '__main__':
                 ss_max_acc_i = 2 * I0/c * (au / norm(xx0i[0:3]))**2 * Am
                 # Approximation for reachable distances at each time with solar sails
                 drs_reach_i = ss_max_acc_i/2 * dtsi**2
-                drs_reach_i /= 0.7  # Relax the distance requirement a bit, tests show it doesn't add much in practice though
+                drs_reach_i *= 2  # Relax the distance requirement a bit, tests show it doesn't add much in practice though
 
                 cas_idxs_i = []
                 grid_cas_points_tot_i = 0  # Total number of collision risks
@@ -154,7 +154,8 @@ if __name__ == '__main__':
 
                     # See if distance within reach (applying max acceleration heuristic)
                     ca_dist = norm(ca_ss_xx[0:3] - ca_ast_xx[0:3])
-                    drs_reach = ss_max_acc_i/2 * (ca_t - t0)**2
+                    drs_reach = ss_max_acc_i/2 * (ca_t - t0i)**2
+                    drs_reach *= 1.5  # Maybe tweak this factor a bit, higher to find more solutions, lower to save time
 
                     # If reachable append to close approach list
                     if ca_dist < drs_reach:
