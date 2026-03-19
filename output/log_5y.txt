@@ -1,0 +1,1639 @@
+Starting beam search ...
+Starting tree level 1
+Expanding open list node 1 / 1 (tree level 1)
+Initial number of close approache indexes: 65
+(Avg grid triggers per idx: 6.723076923076923)
+Remaining number of close approache indexes: 12
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Solution added to candidate list
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 3
+Transfers added to candidate list: 3
+
+Starting tree level 2
+Expanding open list node 1 / 3 (tree level 2)
+Initial number of close approache indexes: 51
+(Avg grid triggers per idx: 5.470588235294118)
+Remaining number of close approache indexes: 29
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Feasible transfers found: 3
+Transfers added to candidate list: 3
+Expanding open list node 2 / 3 (tree level 2)
+Initial number of close approache indexes: 51
+(Avg grid triggers per idx: 6.568627450980392)
+Remaining number of close approache indexes: 31
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+Expanding open list node 3 / 3 (tree level 2)
+Initial number of close approache indexes: 67
+(Avg grid triggers per idx: 7.17910447761194)
+Remaining number of close approache indexes: 40
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 1
+Transfers added to candidate list: 1
+
+Starting tree level 3
+Expanding open list node 1 / 3 (tree level 3)
+Initial number of close approache indexes: 59
+(Avg grid triggers per idx: 6.88135593220339)
+Remaining number of close approache indexes: 34
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Feasible transfers found: 2
+Transfers added to candidate list: 2
+Expanding open list node 2 / 3 (tree level 3)
+Initial number of close approache indexes: 71
+(Avg grid triggers per idx: 6.873239436619718)
+Remaining number of close approache indexes: 38
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 1
+Transfers added to candidate list: 1
+Expanding open list node 3 / 3 (tree level 3)
+Initial number of close approache indexes: 75
+(Avg grid triggers per idx: 7.08)
+Remaining number of close approache indexes: 53
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 2
+Transfers added to candidate list: 2
+
+Starting tree level 4
+Expanding open list node 1 / 3 (tree level 4)
+Initial number of close approache indexes: 75
+(Avg grid triggers per idx: 7.733333333333333)
+Remaining number of close approache indexes: 51
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Solution added to candidate list
+Solution added to candidate list
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 7
+Transfers added to candidate list: 7
+Expanding open list node 2 / 3 (tree level 4)
+Initial number of close approache indexes: 60
+(Avg grid triggers per idx: 6.766666666666667)
+Remaining number of close approache indexes: 38
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+Expanding open list node 3 / 3 (tree level 4)
+Initial number of close approache indexes: 75
+(Avg grid triggers per idx: 7.093333333333334)
+Remaining number of close approache indexes: 52
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+
+Starting tree level 5
+Expanding open list node 1 / 3 (tree level 5)
+Initial number of close approache indexes: 40
+(Avg grid triggers per idx: 6.2)
+Remaining number of close approache indexes: 27
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+Expanding open list node 2 / 3 (tree level 5)
+Initial number of close approache indexes: 47
+(Avg grid triggers per idx: 6.0212765957446805)
+Remaining number of close approache indexes: 34
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Feasible transfers found: 2
+Transfers added to candidate list: 2
+Expanding open list node 3 / 3 (tree level 5)
+Initial number of close approache indexes: 44
+(Avg grid triggers per idx: 6.5)
+Remaining number of close approache indexes: 31
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Solution added to candidate list
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 4
+Transfers added to candidate list: 4
+
+Starting tree level 6
+Expanding open list node 1 / 3 (tree level 6)
+Initial number of close approache indexes: 56
+(Avg grid triggers per idx: 7.0)
+Remaining number of close approache indexes: 38
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Solution added to candidate list
+No solution found
+Solution added to candidate list
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 4
+Transfers added to candidate list: 4
+Expanding open list node 2 / 3 (tree level 6)
+Initial number of close approache indexes: 60
+(Avg grid triggers per idx: 6.5)
+Remaining number of close approache indexes: 34
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Solution added to candidate list
+Solution added to candidate list
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 4
+Transfers added to candidate list: 4
+Expanding open list node 3 / 3 (tree level 6)
+Initial number of close approache indexes: 72
+(Avg grid triggers per idx: 6.833333333333333)
+Remaining number of close approache indexes: 49
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 1
+Transfers added to candidate list: 1
+
+Starting tree level 7
+Expanding open list node 1 / 3 (tree level 7)
+Initial number of close approache indexes: 83
+(Avg grid triggers per idx: 7.024096385542169)
+Remaining number of close approache indexes: 61
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+Solution added to candidate list
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 5
+Transfers added to candidate list: 5
+Expanding open list node 2 / 3 (tree level 7)
+Initial number of close approache indexes: 63
+(Avg grid triggers per idx: 6.317460317460317)
+Remaining number of close approache indexes: 42
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 1
+Transfers added to candidate list: 1
+Expanding open list node 3 / 3 (tree level 7)
+Initial number of close approache indexes: 67
+(Avg grid triggers per idx: 6.626865671641791)
+Remaining number of close approache indexes: 46
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 1
+Transfers added to candidate list: 1
+
+Starting tree level 8
+Expanding open list node 1 / 3 (tree level 8)
+Initial number of close approache indexes: 55
+(Avg grid triggers per idx: 6.927272727272728)
+Remaining number of close approache indexes: 40
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 3
+Transfers added to candidate list: 3
+Expanding open list node 2 / 3 (tree level 8)
+Initial number of close approache indexes: 69
+(Avg grid triggers per idx: 6.579710144927536)
+Remaining number of close approache indexes: 48
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 2
+Transfers added to candidate list: 2
+Expanding open list node 3 / 3 (tree level 8)
+Initial number of close approache indexes: 83
+(Avg grid triggers per idx: 7.0)
+Remaining number of close approache indexes: 55
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 1
+Transfers added to candidate list: 1
+
+Starting tree level 9
+Expanding open list node 1 / 3 (tree level 9)
+Initial number of close approache indexes: 92
+(Avg grid triggers per idx: 7.565217391304348)
+Remaining number of close approache indexes: 74
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 3
+Transfers added to candidate list: 3
+Expanding open list node 2 / 3 (tree level 9)
+Initial number of close approache indexes: 53
+(Avg grid triggers per idx: 5.716981132075472)
+Remaining number of close approache indexes: 36
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+Expanding open list node 3 / 3 (tree level 9)
+Initial number of close approache indexes: 62
+(Avg grid triggers per idx: 6.354838709677419)
+Remaining number of close approache indexes: 39
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 1
+Transfers added to candidate list: 1
+
+Starting tree level 10
+Expanding open list node 1 / 3 (tree level 10)
+Initial number of close approache indexes: 70
+(Avg grid triggers per idx: 7.014285714285714)
+Remaining number of close approache indexes: 53
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 3
+Transfers added to candidate list: 3
+Expanding open list node 2 / 3 (tree level 10)
+Initial number of close approache indexes: 151
+(Avg grid triggers per idx: 7.655629139072848)
+Remaining number of close approache indexes: 103
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 3
+Transfers added to candidate list: 3
+Expanding open list node 3 / 3 (tree level 10)
+Initial number of close approache indexes: 112
+(Avg grid triggers per idx: 7.928571428571429)
+Remaining number of close approache indexes: 79
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 2
+Transfers added to candidate list: 2
+
+Starting tree level 11
+Expanding open list node 1 / 3 (tree level 11)
+Initial number of close approache indexes: 81
+(Avg grid triggers per idx: 6.7407407407407405)
+Remaining number of close approache indexes: 61
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 4
+Transfers added to candidate list: 4
+Expanding open list node 2 / 3 (tree level 11)
+Initial number of close approache indexes: 112
+(Avg grid triggers per idx: 6.732142857142857)
+Remaining number of close approache indexes: 78
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 3
+Transfers added to candidate list: 3
+Expanding open list node 3 / 3 (tree level 11)
+Initial number of close approache indexes: 79
+(Avg grid triggers per idx: 6.3164556962025316)
+Remaining number of close approache indexes: 54
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 2
+Transfers added to candidate list: 2
+
+Starting tree level 12
+Expanding open list node 1 / 3 (tree level 12)
+Initial number of close approache indexes: 65
+(Avg grid triggers per idx: 6.523076923076923)
+Remaining number of close approache indexes: 49
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Feasible transfers found: 1
+Transfers added to candidate list: 1
+Expanding open list node 2 / 3 (tree level 12)
+Initial number of close approache indexes: 57
+(Avg grid triggers per idx: 5.0701754385964914)
+Remaining number of close approache indexes: 41
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Feasible transfers found: 2
+Transfers added to candidate list: 2
+Expanding open list node 3 / 3 (tree level 12)
+Initial number of close approache indexes: 103
+(Avg grid triggers per idx: 7.135922330097087)
+Remaining number of close approache indexes: 80
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 3
+Transfers added to candidate list: 3
+
+Starting tree level 13
+Expanding open list node 1 / 3 (tree level 13)
+Initial number of close approache indexes: 89
+(Avg grid triggers per idx: 6.685393258426966)
+Remaining number of close approache indexes: 64
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 4
+Transfers added to candidate list: 4
+Expanding open list node 2 / 3 (tree level 13)
+Initial number of close approache indexes: 36
+(Avg grid triggers per idx: 6.5)
+Remaining number of close approache indexes: 23
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+Expanding open list node 3 / 3 (tree level 13)
+Initial number of close approache indexes: 123
+(Avg grid triggers per idx: 7.227642276422764)
+Remaining number of close approache indexes: 88
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+
+Starting tree level 14
+Expanding open list node 1 / 3 (tree level 14)
+Initial number of close approache indexes: 127
+(Avg grid triggers per idx: 7.921259842519685)
+Remaining number of close approache indexes: 77
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Solution added to candidate list
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 7
+Transfers added to candidate list: 7
+Expanding open list node 2 / 3 (tree level 14)
+Initial number of close approache indexes: 125
+(Avg grid triggers per idx: 7.456)
+Remaining number of close approache indexes: 81
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 2
+Transfers added to candidate list: 2
+Expanding open list node 3 / 3 (tree level 14)
+Initial number of close approache indexes: 112
+(Avg grid triggers per idx: 8.571428571428571)
+Remaining number of close approache indexes: 84
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+
+Starting tree level 15
+Expanding open list node 1 / 3 (tree level 15)
+Initial number of close approache indexes: 77
+(Avg grid triggers per idx: 6.012987012987013)
+Remaining number of close approache indexes: 58
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 3
+Transfers added to candidate list: 3
+Expanding open list node 2 / 3 (tree level 15)
+Initial number of close approache indexes: 78
+(Avg grid triggers per idx: 6.038461538461538)
+Remaining number of close approache indexes: 51
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 1
+Transfers added to candidate list: 1
+Expanding open list node 3 / 3 (tree level 15)
+Initial number of close approache indexes: 40
+(Avg grid triggers per idx: 7.025)
+Remaining number of close approache indexes: 26
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Solutions in candidate list likely better than current CAs
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+
+Starting tree level 16
+Expanding open list node 1 / 3 (tree level 16)
+Initial number of close approache indexes: 77
+(Avg grid triggers per idx: 7.116883116883117)
+Remaining number of close approache indexes: 56
+No solution found
+No solution found
+No solution found
+Solution found but not added because after final time
+No solution found
+No solution found
+Solution found but not added because after final time
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Solution found but not added because after final time
+No solution found
+Optimization stop: Close approaches after final time
+Feasible transfers found: 4
+Transfers added to candidate list: 1
+Expanding open list node 2 / 3 (tree level 16)
+Initial number of close approache indexes: 121
+(Avg grid triggers per idx: 6.768595041322314)
+Remaining number of close approache indexes: 83
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution found but not added because after final time
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution found but not added because after final time
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+Optimization stop: Close approaches after final time
+Feasible transfers found: 3
+Transfers added to candidate list: 1
+Expanding open list node 3 / 3 (tree level 16)
+Initial number of close approache indexes: 92
+(Avg grid triggers per idx: 6.630434782608695)
+Remaining number of close approache indexes: 70
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution found but not added because after final time
+No solution found
+No solution found
+No solution found
+Solution found but not added because after final time
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution added to candidate list
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Close approaches after final time
+Feasible transfers found: 3
+Transfers added to candidate list: 1
+
+Starting tree level 17
+Expanding open list node 1 / 3 (tree level 17)
+Initial number of close approache indexes: 190
+(Avg grid triggers per idx: 8.51578947368421)
+Remaining number of close approache indexes: 134
+Solution found but not added because after final time
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Solution found but not added because after final time
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Close approaches after final time
+Feasible transfers found: 2
+Transfers added to candidate list: 0
+Expanding open list node 2 / 3 (tree level 17)
+Initial number of close approache indexes: 126
+(Avg grid triggers per idx: 7.142857142857143)
+Remaining number of close approache indexes: 86
+No solution found
+No solution found
+No solution found
+No solution found
+Optimization stop: Close approaches after final time
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+Expanding open list node 3 / 3 (tree level 17)
+Initial number of close approache indexes: 141
+(Avg grid triggers per idx: 7.01418439716312)
+Remaining number of close approache indexes: 89
+Optimization stop: Close approaches after final time
+Feasible transfers found: 0
+Transfers added to candidate list: 0
+
+Beam search finished. Total computation time: 1396.228014945984 s
+Saving results ...
+Saving successful

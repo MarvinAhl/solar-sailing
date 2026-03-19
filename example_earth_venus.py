@@ -45,7 +45,7 @@ if __name__ == '__main__':
                           [-0.97670402, 0.71398152]])
 
     # Solve Solar Sailing shooting problem
-    sol_tof, sol_uus, _ = ss.target(xx0, xxf_fun, tof_max, N, tof_guess=tof_guess, uus_guess=uus_guess, time_opt=False, is_mbh=False)
+    sol_tof, sol_uus, _ = ss.target(xx0, xxf_fun, tof_max, N, tof_guess=tof_guess, uus_guess=uus_guess)
     print("Solution:")
     print(sol_tof)
     print(sol_uus)
@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     # Plot result 3D
     fig3d = plt.figure(figsize=(6, 5))
-    ax3d = fig3d.add_subplot(111, projection='3d')
+    ax3d = fig3d.add_subplot(111, projection='3d', proj_type='ortho')
 
     # Plot Sun, Earth, and Venus
     ax3d.plot(0, 0, 0, 'y.', markersize=20)

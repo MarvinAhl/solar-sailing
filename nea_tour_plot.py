@@ -29,12 +29,12 @@ if __name__ == '__main__':
     neas = asteroids("NEA_selection.csv")
 
     # Find best solution in search tree
-    search_tree = np.load("search_tree.npy")
+    search_tree = np.load("search_tree_5y.npy")
 
     max_level = search_tree['level'][-1]
     max_level_num = np.sum(search_tree['level'] == max_level)
     select_sol = 0  # 0 for best, 1 for second best, ...
-    opt_idx = np.where(search_tree['level'] == 3)[0][select_sol]  # Tree levels ordered by time
+    opt_idx = np.where(search_tree['level'] == max_level)[0][select_sol]  # Tree levels ordered by time
 
     print("Maximum number of asteroid flybys: {} ({} solutions with that number)".format(max_level, max_level_num))
 
@@ -81,7 +81,7 @@ if __name__ == '__main__':
         ast_t1 = ast_t0 + Ti
         ast_ts = np.linspace(ast_t0, ast_t1, 1000)
         ast_xxs = neas.get_state(idx=ast_idx_i, et=ast_ts)
-        ast_plot = ax.plot(ast_xxs[:, 0], ast_xxs[:, 1], ast_xxs[:, 2], linewidth=1, label=neas.names[ast_idx_i])
+        ast_plot = ax.plot(ast_xxs[:, 0], ast_xxs[:, 1], ast_xxs[:, 2], linewidth=0.5, label=neas.names[ast_idx_i])
         ax.plot(ast_xxs[0, 0], ast_xxs[0, 1], ast_xxs[0, 2], '.', markersize=7, color=ast_plot[0].get_color(), zorder=100)
 
         print(neas.names[ast_idx_i] + ", idx: {}".format(ast_idx_i))
@@ -98,5 +98,3 @@ if __name__ == '__main__':
     ax.legend()
 
     plt.show()
-
-    pass

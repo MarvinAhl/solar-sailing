@@ -2,7 +2,7 @@ import numpy as np
 from numpy.linalg import norm
 from scipy.integrate import solve_ivp
 import numba
-import pygmo as pg
+from mbh import mbh
 
 class solsail:
     def __init__(self, mu, I0, r0, Am, c):
@@ -55,56 +55,65 @@ class solsail:
         # Return times and states
         return xxs, ts
     
-    def target(self, xx0, xxf_fun, tof_max, N=5, tof_guess=None, uus_guess=None, time_opt=False, is_mbh=True, verbose=True):
-        solsail_udp = solsail.udp(self, N, xx0, xxf_fun, tof_max, time_opt)
-        prob = pg.problem(solsail_udp)
-        prob.c_tol = 1e-4
+    def target(self, xx0, xxf_fun, tof_max, N=5, tof_guess=None, uus_guess=None, verbose=True):
+        # Scaling factors
+        tof_unit = tof_max
+        pos_unit = norm(xx0[0:3])
+        vel_unit = norm(xx0[3:6])
 
-        sqp = pg.nlopt(solver="slsqp")
-        sqp.xtol_rel = 1e-4
-        sqp.xtol_abs = 1e-4
-        if is_mbh:
-            if time_opt:
-                sqp.maxeval = 400
-                sqp.maxtime = 120  # If this is reached, then something is really wrong
-            else:
-                sqp.maxeval = 200
-                sqp.maxtime = 60
-
-        local_algo = pg.algorithm(sqp)
-        if is_mbh:
-            local_algo.set_verbosity(0)
-        
-        algo = None
-        if is_mbh:
-            algo = pg.algorithm(pg.mbh(local_algo, stop=5, perturb=0.5))
-        else:
-            algo = local_algo
-
-        if verbose:
-            algo.set_verbosity(1)
-        else:
-            algo.set_verbosity(0)
-
-        pop = None
-        if tof_guess is None or uus_guess is None:
-            pop = pg.population(prob, size=1)
-        else:
-            tof_guess_sc = tof_guess / solsail_udp.tof_unit
+        # Initial guess creation (if anything supplied)
+        x_guess = None
+        if tof_guess is not None and uus_guess is not None:
+            tof_guess_sc = tof_guess / tof_unit
             uus_guess_vec = np.reshape(uus_guess, (2*N))
             x_guess = np.hstack((tof_guess_sc, uus_guess_vec))
-
-            pop = pg.population(prob)
-            pop.push_back(x=x_guess)
         
-        pop = algo.evolve(pop)
-        sol_f = pop.get_f()[0]  # Not really useful for anything because it's scaled
-        sol_x = pop.get_x()[0]
+        # Define bounds
+        lb_tof = [1 / tof_unit]
+        ub_tof = [tof_max / tof_unit]
+        lb_uu = [-np.pi/2] * 2 * N
+        ub_uu = [np.pi/2] * 2 * N
+        lb = np.hstack((lb_tof, lb_uu))
+        ub = np.hstack((ub_tof, ub_uu))
 
-        sol_tof = sol_x[0] * solsail_udp.tof_unit
+        bounds = [(l, u) for l, u in zip(lb, ub)]
+
+        # Optimize
+        f = lambda x: self.fitness(x, xx0, xxf_fun, N, tof_unit, pos_unit, vel_unit)
+        sol_x, sol_f = mbh(f, bounds, x_guess, stop=5, pert=0.5, local_ftol=1e-5, verbose=verbose)
+
+        # Extract and save results
+        sol_tof = sol_x[0] * tof_unit
         sol_uus = sol_x[1:].reshape((N, 2))
 
         return sol_tof, sol_uus, sol_f
+    
+    def fitness(self, x, xx0, xxf_fun, N, tof_unit, pos_unit, vel_unit):
+        tof = x[0] * tof_unit  # tof is scaled
+        uus = x[1:].reshape((N, 2))
+
+        # Propagate all piecewise constant solar sailing segments and only save final state
+        ts = np.linspace(0, tof, N+1)
+        xxf = xx0
+        for i in range(N):
+            uui = uus[i]
+            soli = solve_ivp(lambda t, xx: solsail.__dynamics(t, xx, uui, self.mu, self.I0, self.r0, self.Am, self.c),
+                                t_span=(ts[i], ts[i+1]), y0=xxf, method='LSODA', t_eval=[ts[i+1]], rtol=1e-6, atol=1e-6)
+            xxf = soli.y.squeeze().copy()
+            del soli
+
+        xxf_targ = np.array(xxf_fun(tof))
+
+        # Target only position, or position and velocity, depending on what the target function outputs
+        constr = 0
+        if xxf_targ.size == 3:
+            constr = norm(xxf_targ - xxf[0:3]) / pos_unit
+        elif xxf_targ.size == 6:
+            constr = norm(xxf_targ[0:3] - xxf[0:3]) / pos_unit + \
+                    norm(xxf_targ[3:6] - xxf[3:6]) / vel_unit
+
+        # This is the optimization objective
+        return constr
 
 
     # Constant control Solar Sailing dynamics considering sun 2-body gravity and SRP
@@ -141,75 +150,3 @@ class solsail:
         rr_dot = vv
         vv_dot = aa_2b + aa_srp
         return np.concat((rr_dot, vv_dot))
-    
-    # Only used for Pygmo to optimize
-    class udp:
-        def __init__(self, ss, N, xx0, xxf_fun, tof_max, time_opt):
-            self.ss = ss
-            self.N = N
-            self.xx0 = xx0
-            self.xxf_fun = xxf_fun
-            self.tof_max = tof_max
-            self.time_opt = time_opt
-
-            # Scaling parameters
-            self.tof_unit = tof_max
-            self.pos_unit = norm(xx0[0:3])
-            self.vel_unit = norm(xx0[3:6])
-
-        # x = [tof, phi0, th0, ph1, th1, ..., phiN-1, thN-1]
-        def fitness(self, x):
-            tof = x[0] * self.tof_unit  # tof is scaled
-            uus = x[1:].reshape((self.N, 2))
-
-            xxs, _ = self.ss.propagate(self.xx0, tof, uus)
-
-            if xxs is None:
-                if self.time_opt:
-                    return [np.nan, np.nan]
-                else:
-                    return [np.nan]
-
-            xxf = xxs[-1]
-
-            xxf_targ = self.xxf_fun(tof)
-
-            # Optimizes only position, or position and velocity
-            constr = 0
-            if xxf_targ.size == 3:
-                constr = norm(xxf_targ - xxf[0:3]) / self.pos_unit
-            elif xxf_targ.size == 6:
-                constr = norm(xxf_targ[0:3] - xxf[0:3]) / self.pos_unit + \
-                      norm(xxf_targ[3:6] - xxf[3:6]) / self.vel_unit
-
-            if self.time_opt:
-                return [x[0], constr]
-            else:
-                return [constr]
-        
-        def get_bounds(self):
-            lb_tof = [1 / self.tof_unit]
-            ub_tof = [self.tof_max / self.tof_unit]
-
-            lb_uu = [-np.pi/2] * 2 * self.N
-            ub_uu = [np.pi/2] * 2 * self.N
-
-            lb = np.hstack((lb_tof, lb_uu))
-            ub = np.hstack((ub_tof, ub_uu))
-
-            return (lb, ub)
-        
-        # Number of equality constraints
-        def get_nec(self):
-            if self.time_opt:
-                return 1
-            else:
-                return 0
-        
-        # Number of inequality constraints
-        def get_nic(self):
-            return 0
-
-        # Supply numerical gradient
-        def gradient(self, x):
-            return pg.estimate_gradient(lambda x: self.fitness(x), x)

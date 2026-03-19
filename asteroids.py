@@ -86,7 +86,7 @@ class asteroids:
         et0 = np.tile(self.et0s[idx], (N_t, 1)).T
         dt = et_mat - et0
 
-        keps = np.atleast_3d(self.kep[idx])
+        keps = np.atleast_3d(self.kep[idx].copy())
         keps = np.moveaxis(keps, 2, 1)
         keps = np.tile(keps, (1, N_t, 1))
         keps[:, :, 5] += dt * np.tile(self.n[idx], (N_t, 1)).T  # Update mean anomaly
